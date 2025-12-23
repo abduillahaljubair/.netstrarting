@@ -1,0 +1,70 @@
+﻿
+
+@* list use kore eivabe kora jai *@
+
+
+@* @model List<Firstyoutubeproject.Models.student>
+@{
+    ViewData["Title"] = "StudentInfo";
+}
+<body>
+    @{
+        for (int i=0;i<Model.Count;i++)
+        {
+   
+    <h1>Student Info:</h1>
+    <h3>Name:@Model[i].Name</h3>
+            <h3>Age:@Model[i].Age</h3>
+            <h3>Grade:@Model[i].Grade</h3>
+            <h3>Balance:@Model[i].Balance</h3>
+            <br />
+        }
+
+    }
+</body> *@
+
+
+@model IEnumerable<Firstyoutubeproject.Models.student>//IEnum use korle for each bebohar kora lagbe
+@{
+    ViewData["Title"] = "StudentInfo";
+}
+<body>
+    @{
+        foreach (var i in Model)
+        {
+
+            <h1>Student Info:</h1>
+            <h3>Name:@i.Name</h3>
+            <h3>Age:@i.Age</h3>
+            <h3>Grade:@i.Grade</h3>
+            <h3>Balance:@i.Balance</h3>
+            <hr />
+            <br />
+        }
+
+    }
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+@* ekta user er jonno eivabe kora jai  *@
+
+@* @model Firstyoutubeproject.Models.student;
+<body>
+    <h1>Student Info:</h1>
+    <h3>Name:@Model.Name</h3>
+    <h3>Age:@Model.Age</h3>
+    <h3>Grade:@Model.Grade</h3>
+    <h3>Balance:@Model.Balance</h3>
+</body>
+ *@
+
