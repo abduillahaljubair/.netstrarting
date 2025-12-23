@@ -69,6 +69,15 @@ namespace Firstyoutubeproject.Controllers
 
             return View(s1);
         }
+/*7 view data function  */
+        public IActionResult viewdatadescription()
+        {
+            ViewData["prodid"] = 1;
+            ViewData["prodname"] = "laptop";
+            ViewData["prodprice"] = 45000;
+            ViewData["proqyantity"]= 5;
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
