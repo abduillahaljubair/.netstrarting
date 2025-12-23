@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using Firstyoutubeproject.Models;//importing model namespace
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Firstyoutubeproject.Controllers
 {
@@ -69,13 +69,26 @@ namespace Firstyoutubeproject.Controllers
 
             return View(s1);
         }
-/*7 view data function  */
+         /*7 view data function  */
         public IActionResult viewdatadescription()
         {
             ViewData["prodid"] = 1;
             ViewData["prodname"] = "laptop";
             ViewData["prodprice"] = 45000;
             ViewData["proqyantity"]= 5;
+            return View();
+        }
+
+        /*8 view Bag function  */
+        /*properties hisabe use kore 
+            .diye access kora jay*/
+        public IActionResult viewbagdescription()
+        {
+           ViewBag.prodid = 2;
+              ViewBag.prodname = "mobile";
+                ViewBag.prodprice = 25000;
+         
+
             return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
