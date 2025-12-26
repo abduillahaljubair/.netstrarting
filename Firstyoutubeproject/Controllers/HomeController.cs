@@ -91,6 +91,16 @@ namespace Firstyoutubeproject.Controllers
 
             return View();
         }
+
+/*    9    using RedirectToActionResult jekhane ekta page call dewar age arekta page e call dewa  */
+
+
+        public IActionResult redirectaction()
+        {
+            TempData["message"] = "you are being redirected to about us page";
+            return RedirectToAction("AboutUs");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
