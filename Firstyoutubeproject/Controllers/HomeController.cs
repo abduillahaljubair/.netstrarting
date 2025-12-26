@@ -101,18 +101,37 @@ namespace Firstyoutubeproject.Controllers
             return RedirectToAction("AboutUs");
         }
 
-        /*10 created form action*/
+        /*10 created form action */
+        /* passing value view to controller using action method */
         public IActionResult Formshow()
         {
             return View();
         }
 
         /*        form  er data rakhar jonno jei method ta call hobe seita form er action theke ashbe */
-
+        /* passing value view to controller using action method */
         public IActionResult Showform(string username, int Age,string Grade,int Price)
         {
             student s = new student(username, Age, Grade, Price);
             return View(s);
+        }
+
+        /*        11 created form action using request method
+        */        /* passing value view to controller using request method */
+
+        public IActionResult Formshow2()
+        {
+            return View();
+        }
+        public IActionResult Showform2()
+        {
+            ViewBag.username=Request.Form["username"];
+            ViewBag.Age = Request.Form["Age"];
+            ViewBag.Price = Request.Form["Price"];
+            ViewBag.Grade = Request.Form["Grade"];
+
+
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
