@@ -125,7 +125,7 @@ namespace Firstyoutubeproject.Controllers
         }
         public IActionResult Showform2()
         {
-            ViewBag.username=Request.Form["username"];
+            ViewBag.username = Request.Form["username"];
             ViewBag.Age = Request.Form["Age"];
             ViewBag.Price = Request.Form["Price"];
             ViewBag.Grade = Request.Form["Grade"];
@@ -133,6 +133,21 @@ namespace Firstyoutubeproject.Controllers
 
             return View();
         }
+        /*        12 created form action using IFormCollection
+*/        /* passing value view to controller using IFormCollection *
+        /* [HttpPost]
+         public IActionResult Showform2(IFromCollection data)
+         {
+             ViewBag.username = data["username"];
+             ViewBag.Age = data["Age"];
+             ViewBag.Price = data["Price"];
+             ViewBag.Grade = data["Grade"];
+
+
+             return View();
+         }*/
+        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
