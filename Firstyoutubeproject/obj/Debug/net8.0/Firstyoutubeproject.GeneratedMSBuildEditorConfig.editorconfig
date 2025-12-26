@@ -28,12 +28,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Formshow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jtc2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Showform.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93Zm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/studentinfo.cshtml]

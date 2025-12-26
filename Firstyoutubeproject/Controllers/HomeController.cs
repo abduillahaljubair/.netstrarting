@@ -101,6 +101,20 @@ namespace Firstyoutubeproject.Controllers
             return RedirectToAction("AboutUs");
         }
 
+        /*10 created form action*/
+        public IActionResult Formshow()
+        {
+            return View();
+        }
+
+        /*        form  er data rakhar jonno jei method ta call hobe seita form er action theke ashbe */
+
+        public IActionResult Showform(string username, int Age,string Grade,int Price)
+        {
+            student s = new student(username, Age, Grade, Price);
+            return View(s);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
