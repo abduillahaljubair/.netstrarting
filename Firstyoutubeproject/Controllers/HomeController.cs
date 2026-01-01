@@ -147,8 +147,13 @@ namespace Firstyoutubeproject.Controllers
              return View();
          }*/
         
-
-
+/*        14 healper class started
+ *        
+*/
+        public IActionResult helper1()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
