@@ -154,6 +154,10 @@ namespace Firstyoutubeproject.Controllers
         {
             return View();
         }
+        public IActionResult validate(IFormCollection f)
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

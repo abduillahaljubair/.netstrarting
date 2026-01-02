@@ -1,16 +1,109 @@
-﻿@*
+﻿
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-@using(Html.BeginForm("","Home"))
-{
+@* @using(Html.BeginForm("validate","Home"))
+{ 
+    <div>
     @Html.Label("Enter User name")
     @Html.TextBox("username")
+    </div>
     <br />
+
+    <div>
     @Html.Label("Enter Age")
     @Html.TextBox("Age")
+        </div>
+        <div>
     <input type="submit" value="Submit" />
-    <input type="text" value="Submit" />
+        </div>
+} *@
+@{
+    List<string> ls = new List<string>();
+    ls.Add("Cse");
+    ls.Add("Ece");
+    ls.Add("Mech");
+    ls.Add("Civil");
+    // list kebol ekta value neite hobe
+    // Dictionary<string, int> dict = new Dictionary<string, int>();
+    // dict.Add("Cse", 24000);
+    // dict.Add("Ece", 22000);
+    // dict.Add("Mech", 20000);
+    // dict.Add("Civil", 18000);
+}
+ 
+@{
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-4 col-md-6 col-sm-12">
+      @using(Html.BeginForm("validate","Home"))
+            {
+                <div>
+                    @Html.Label("nm","Enter User name",new{@class="form-lebel"})
+                </div>
+                    <div>
+                        @Html.TextBox("nm","", new { @class = "form-control" })
+                    </div>
+                    <div>
+                        @Html.Label("fn", "Enter fathers name", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                        @Html.TextBox("fn", "", new { @class = "form-control" })
+                    </div>
+                    <div>
+                        @Html.Label("pass", "Enter password", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                        @Html.Password("pass", "", new { @class = "form-control" })
+                    </div>
+                    <div>
+                        @Html.Label("gen", "Gender", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                        @Html.RadioButton("gen","male",true,new{id="male"})Male
+                    </div>
+                    <div>
+                        @Html.RadioButton("gen", "female", false, new { id = "female" })Female
+                    </div>
+                    <div>
+                        @Html.RadioButton("gen", "other", false, new { id = "other" })Other
+                    </div>
+                    <div>
+                        @Html.Label("crs", "select course", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                       @*@Html.DropDownList("crs",new SelectList(dict),"--select course--")*@
+                       @Html.DropDownList("crs", new SelectList(ls,"Cse"),"select course")                      
+                    </div>
+                    <div>
+                        @Html.Label("hb", "select hobbies", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                        @Html.CheckBox("Cricket",true)Cricket
+                        @Html.CheckBox("Football", false)Football
+                        @Html.CheckBox("Reels", false)Facebook Reels
+                        @Html.CheckBox("game", false)Games
+                    </div>
+                    <div>
+                        @Html.Label("add", "Enter address", new { @class = "form-lebel" })
+                    </div>
+                    <div>
+                        @Html.TextArea("add", "", new { @class = "form-control" })
+                    </div>
+                    <br />
+                    <div>
+                        <input type="submit" class="btn btn-success" value="Register" />
+                        <input type="reset" class="btn btn-danger" value="Clear" />
+                    </div>
+                    <div>
+                    if you already registered please login @Html.ActionLink("Login","Login","Home")
+                       rendering website @Html.ActionLink("Website","Index", "Home")
+                    </div>
 
+            }
+        </div>
+      </div>
+    </div>
 }
