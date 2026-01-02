@@ -1,2 +1,28 @@
-﻿
-@model Login
+﻿@model Firstyoutubeproject.Models.Login
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                @using (Html.BeginForm("LoginShow", "Login"))
+                {
+                  @Html.LabelFor(x => x.username);
+                    @Html.TextBoxFor(x => x.username);
+                    @Html.LabelFor(x => x.password/*, "Enter your password" */)
+                    
+                    @Html.PasswordFor(x => x.password)
+                    <div>
+                        <input type = "submit" class= "btn btn-success" value = "Login" />
+                        <input type = "reset" class= "btn btn-danger" value = "Clear" />
+                    </div>
+                        
+                     
+                    
+                }
+            </div>
+        </div>
+    </div>
+}
