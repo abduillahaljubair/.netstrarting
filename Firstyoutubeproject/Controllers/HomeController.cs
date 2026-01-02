@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using Firstyoutubeproject.Models;//importing model namespace
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Firstyoutubeproject.Controllers
 {
@@ -68,6 +68,95 @@ namespace Firstyoutubeproject.Controllers
             };*/
 
             return View(s1);
+        }
+         /*7 view data function  */
+        public IActionResult viewdatadescription()
+        {
+            ViewData["prodid"] = 1;
+            ViewData["prodname"] = "laptop";
+            ViewData["prodprice"] = 45000;
+            ViewData["proqyantity"]= 5;
+            return View();
+        }
+
+        /*8 view Bag function  */
+        /*properties hisabe use kore 
+            .diye access kora jay*/
+        public IActionResult viewbagdescription()
+        {
+           ViewBag.prodid = 2;
+              ViewBag.prodname = "mobile";
+                ViewBag.prodprice = 25000;
+         
+
+            return View();
+        }
+
+/*    9    using RedirectToActionResult jekhane ekta page call dewar age arekta page e call dewa  */
+
+
+        public IActionResult redirectaction()
+        {
+            TempData["message"] = "you are being redirected to about us page";
+            return RedirectToAction("AboutUs");
+        }
+
+        /*10 created form action */
+        /* passing value view to controller using action method */
+        public IActionResult Formshow()
+        {
+            return View();
+        }
+
+        /*        form  er data rakhar jonno jei method ta call hobe seita form er action theke ashbe */
+        /* passing value view to controller using action method */
+        public IActionResult Showform(string username, int Age,string Grade,int Price)
+        {
+            student s = new student(username, Age, Grade, Price);
+            return View(s);
+        }
+
+        /*        11 created form action using request method
+        */        /* passing value view to controller using request method */
+
+        public IActionResult Formshow2()
+        {
+            return View();
+        }
+        public IActionResult Showform2()
+        {
+            ViewBag.username = Request.Form["username"];
+            ViewBag.Age = Request.Form["Age"];
+            ViewBag.Price = Request.Form["Price"];
+            ViewBag.Grade = Request.Form["Grade"];
+
+
+            return View();
+        }
+        /*        12 created form action using IFormCollection
+*/        /* passing value view to controller using IFormCollection *
+        /* [HttpPost]
+         public IActionResult Showform2(IFromCollection data)
+         {
+             ViewBag.username = data["username"];
+             ViewBag.Age = data["Age"];
+             ViewBag.Price = data["Price"];
+             ViewBag.Grade = data["Grade"];
+
+
+             return View();
+         }*/
+        
+/*        14 healper class started
+ *        
+*/
+        public IActionResult helper1()
+        {
+            return View();
+        }
+        public IActionResult validate(IFormCollection f)
+        {
+            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

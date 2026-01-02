@@ -20,12 +20,32 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Form/FormShow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxGb3JtU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Form/ShowForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxTaG93Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Formshow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jtc2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Formshow2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3Jtc2hvdzIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/helper1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxoZWxwZXIxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Index.cshtml]
@@ -36,8 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Showform.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93Zm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/Showform2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93Zm9ybTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/studentinfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzdHVkZW50aW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/viewbagdescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWV3YmFnZGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Home/viewdatadescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWV3ZGF0YWRlc2NyaXB0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/.netc\#/learning_iteam/Firstyoutubeproject/Views/Shared/Error.cshtml]

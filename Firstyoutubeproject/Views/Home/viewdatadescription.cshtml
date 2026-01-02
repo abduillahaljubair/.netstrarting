@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* @{
+    int price = Convert.ToInt32(ViewData["prodprice"]);
+    int quantity = Convert.ToInt32(ViewData["proqyantity"]);
+    int total = price * quantity;
+}
+    ViewData["Title"] = "Data Description Page";
+<div>
+    <h1 class="display-4">Data Description Page</h1>
+    <h3>productid:@ViewData["prodid"]</h3>
+    <h3>product name:@ViewData["prodname"]</h3>
+    <h3>product price :@ViewData["prodprice"]</h3>
+    <h3>product quantity:@ViewData["proqyantity"]</h3>
+
+    <h3>total product price:@total</h3>
+
+
+</div> *@
+
+<div>
+    <h1 class="display-4">Data Description Page</h1>
+
+    <h3>Product ID: @ViewData["prodid"]</h3>
+    <h3>Product Name: @ViewData["prodname"]</h3>
+
+    @{
+        int price = Convert.ToInt32(ViewData["prodprice"]);
+        int quantity = Convert.ToInt32(ViewData["proqyantity"]);
+        int total = price * quantity;
+    }
+
+    <h3>Product Price: @price</h3>
+    <h3>Quantity: @quantity</h3>
+    <h3>Total Product Price: @total</h3>
+</div>
+
